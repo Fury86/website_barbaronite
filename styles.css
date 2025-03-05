@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap");
+
+:root {
+  font-family: "Montserrat Alternates", sans-seriff;
+  font-size: 16px;
+  background-color: #fffff0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+}
+
+h1 {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  display: inline;
+  font-family: "Montserrat Alternates", sans-seriff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  background-color:#0244ae;
+ /* background-color: #0244ae; */
+  /* back-up bg-color: #0866ff; */
+  height: 45px;
+  position: relative;
+  z-index: 9999;
+}
+
+.nav-end {
+display: flex;
+justify-content: space-between;
+align-self: center;
+font-weight: bold;
+color: white;
+}
+
+.nav-telephone {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a:hover {
+  border: 5px solid transparent; /* Make the border transparent */
+  border-image: linear-gradient(90deg, rgba(255, 30, 30, 1) 0%, rgba(255, 242, 0, 1) 50%, rgba(0, 212, 255, 1) 100%); /* Apply gradient */
+  border-image-slice: 1; /* Makes the gradient applied to the entire border */
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #0244ae; /* Light background */
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2), inset 0px 0px 10px rgba(0, 0, 0, 0.1); /* Outer and inner shadows for 3D effect */
+}
+
+.section-title{
+  margin: 0;
+  padding: 0;
+  border:0;
+}
+
+.burger-menu {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath d='M3 6h18M3 12h18M3 18h18' stroke='currentColor' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+section p {
+  font-size: 1.2rem;
+}
+
+.main-picture {
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1279px) {
+  .header-container {
+      background-color:yellowgreen;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+
+  ul>li {
+    font-size: 1rem;
+  }
+  a:hover {
+    width: 160px;
+  }
+  
+/*i.fa-xl {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -.075em;
+}*/
+
+}
+
+@media (max-width: 959px) {
+  .header-container {
+      background-color:#4da4ff;
+  }
+ .nav-main {
+  display: none;
+ }
+
+ .nav-logo {
+  text-align: center;
+ }
+
+ .about-us {
+  flex-direction: column; /* Stack elements vertically */
+  text-align: center;
+  
+}
+
+.main-picture, .section-title {
+  width: 100%; /* Take full width */
+}
+  }
+
+
+
+
+
+/* .main-picture img {
+  clip-path: path("M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z");
+} */
