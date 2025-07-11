@@ -178,6 +178,16 @@ color: white;
     transform: translateY(-5px);
 }
 
+.card:first-of-type {
+  /* cursor musical note */
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/c_scale,w_32/v1752246579/musical-note_hdcjpr.png') 16 16, auto;
+}
+
+.card:nth-of-type(2) {
+  /* cursor microphone */
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/c_scale,w_32/v1752246990/microphone_thilkr.png') 16 16, auto;
+}
+
 .card img {
     width: 100%;
     height: auto;
@@ -188,6 +198,8 @@ color: white;
 .card h3 {
     color: #0056d2;
     font-size: 1.25rem;
+    line-height: 1.4;  
+    min-height: 3em; 
     margin-bottom: 10px;
 }
 
