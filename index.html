@@ -1,94 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML 5 Boilerplate</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <nav class="main-menu">
+  <body>
+    <header>
+      <nav class="main-menu">
         <div class="header-container">
           <div class="nav-logo"><h1>БарбарониТЕ</h1></div>
-            <div class="nav-main">
-              <ul>
-                <li id="nav-about"><a href="#">За Нас</a></li>
-                  <li id="nav-events"><a href="#">Събития</a></li>
-                  <li id="nav-program"><a href="#">Програма</a></li>
-                <li id="nav-contacts"><a href="contacts.html">Контакти</a></li>
-                  <div class="burger-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-              </ul>
-            </div>
-            <div class="nav-end">
-              <div class="nav-icon">
-                <i class="fa-solid fa-phone-volume fa-lg fa-xl"></i>
+          <div class="nav-main">
+            <ul>
+              <li id="nav-about"><a href="#">За Нас</a></li>
+              <li id="nav-events"><a href="#">Дейности</a></li>
+              <li id="nav-program"><a href="#">Програма</a></li>
+              <li id="nav-events"><a href="#">Събития</a></li>
+
+              <div class="burger-menu">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M3 6h18M3 12h18M3 18h18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
               </div>
-              <div class="nav-telephone"><span class="contact-number">+359887865073</span></div>
+            </ul>
+          </div>
+          <div class="nav-end">
+            <div class="nav-icon">
+              <i class="fa-solid fa-phone-volume fa-lg fa-xl"></i>
             </div>
+            <div class="nav-telephone">
+              <span class="nav-contacts"
+                ><a href="contacts.html">Контакти</a></span
+              >
+            </div>
+          </div>
         </div>
-    </nav>
-  </header>
-  <main>
-    <section class="about-us">
-      <div class="main-picture"><img src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1739548135/20241103_122007_upscaled_1_zsjbzq.jpg" width= 500 height= 307 alt="balloon">
-      </div>
-      <div class="section-title">
-        <div class="main-title">
+      </nav>
+    </header>
+    <main>
+      <section class="about-us">
+        <div class="main-picture">
+          <img
+            src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1739548135/20241103_122007_upscaled_1_zsjbzq.jpg"
+            width="500"
+            height="307"
+            alt="balloon"
+          />
+        </div>
+        <div class="section-title">
+          <div class="main-title">
             <h2 class="animation-hide-highlight">Кои сме ние?</h2>
             <div class="line-divider small">
-  <svg viewBox="0 0 1359 91" preserveAspectRatio="none">
-    <path d="M1358 28C1358 28 876 14 798 64C720 114 598 87 450 20C275.398 -59.0427 153.325 150.096 1.00006 64" stroke="#7021A3" stroke-width="2.31" fill="none"/>
-  </svg>
-</div>
-        </div>
-        <div class="flex-column">
-            <p>БарбарониТЕ е творчески център, посветен на развитието на умения и знания в сферата на изкуствата и науката за деца и възрастни. Нашата мисия е да вдъхновим всеки, който иска да изрази себе си чрез творчество, независимо от възрастта и опита.</p>
+              <svg viewBox="0 0 1359 91" preserveAspectRatio="none">
+                <path
+                  d="M1358 28C1358 28 876 14 798 64C720 114 598 87 450 20C275.398 -59.0427 153.325 150.096 1.00006 64"
+                  stroke="#7021A3"
+                  stroke-width="2.31"
+                  fill="none"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="flex-column">
+            <p>
+              БарбарониТЕ е творчески център, посветен на развитието на умения и
+              знания в сферата на изкуствата и науката за деца и възрастни.
+              Нашата мисия е да вдъхновим всеки, който иска да изрази себе си
+              чрез творчество, независимо от възрастта и опита.
+            </p>
             <a href="#" class="custom-button">Научи Повече</a>
+          </div>
         </div>
+      </section>
+      <div class="line-divider">
+        <svg
+          width="auto"
+          height="auto"
+          viewBox="0 0 1359 91"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1358 28C1358 28 876 14 798 64C720 114 598 87 450 20C275.398 -59.0427 153.325 150.096 1.00006 64"
+            stroke="#7021A3"
+            stroke-width="2.31"
+          />
+        </svg>
       </div>
-    </section>
-    <div class="line-divider"><svg width="auto" height="auto" viewBox="0 0 1359 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1358 28C1358 28 876 14 798 64C720 114 598 87 450 20C275.398 -59.0427 153.325 150.096 1.00006 64" stroke="#7021A3" stroke-width="2.31"/>
-      </svg></div>   
-        <section class="our-activities">
-          <div class="main-title">
-            <h2 class="animation-hide-highlight">Нашите дейности</h2>
-            <div class="line-divider small">
-  <svg viewBox="0 0 1359 91" preserveAspectRatio="none">
-    <path d="M1358 28C1358 28 876 14 798 64C720 114 598 87 450 20C275.398 -59.0427 153.325 150.096 1.00006 64" stroke="#7021A3" stroke-width="2.31" fill="none"/>
-  </svg>
-</div>
+      <section class="our-activities">
+        <div class="main-title">
+          <h2 class="animation-hide-highlight">Нашите дейности</h2>
+          <div class="line-divider small">
+            <svg viewBox="0 0 1359 91" preserveAspectRatio="none">
+              <path
+                d="M1358 28C1358 28 876 14 798 64C720 114 598 87 450 20C275.398 -59.0427 153.325 150.096 1.00006 64"
+                stroke="#7021A3"
+                stroke-width="2.31"
+                fill="none"
+              />
+            </svg>
+          </div>
         </div>
-    <div class="container">
-        <div class="card">
-            <img src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1752234381/music_course_image_460_x_322_vyvmuy.png" width=460 height=322 alt="music course" class="course-image">
+        <div class="container">
+          <div class="card" id="piano">
+            <img
+              src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753354376/%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D0%BB%D0%B0%D0%BB%D0%B0_%D0%BB%D0%BE%D0%B3%D0%BE_qislmw.png"
+              width="1192"
+              height="501"
+              alt="music course"
+              class="course-image"
+            />
             <div class="card-content">
-            <h3>Музикални уроци за деца и тийнейджъри</h3>
-            <p>Индивидуални и групови занимания по музика, съобразени с възрастта и интересите на всяко дете. Развиваме слух, ритъм, техника и любов към музиката в подкрепяща и вдъхновяваща среда.</p>
+              <h3>Пиано и солфеж</h3>
+              <div class="card-info slide">
+                <p>
+                  Индивидуални и групови занимания по музика, съобразени с
+                  възрастта и интересите на всяко дете. Развиваме слух, ритъм,
+                  техника и любов към музиката в подкрепяща и вдъхновяваща
+                  среда.
+                </p>
+                <span class="card-link"><a href="#">Научи повече</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753357596/%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D0%BF%D0%B5%D0%B9_%D0%BB%D0%BE%D0%B3%D0%BE_fpcbxr.png"
+              width="1072"
+              height="443"
+              alt="singing course"
+              class="course-image"
+            />
+            <div class="card-content">
+              <h3>Пеене</h3>
+              <p>
+                Индивидуални и групови занимания, които развиват гласа,
+                музикалния слух и сценичното присъствие. Подходящи за всички,
+                които обичат да пеят – без значение от опита.
+              </p>
             </div>
             <span class="card-link"><a href="#">Научи повече</a></span>
-        </div>
-        <div class="card">
-            <img src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1752235318/singing_course_image_460_x_322_bgmz1f.png" width=460 height=322 alt="singing course" class="course-image">
+          </div>
+          <div class="card">
+            <img
+              src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753362414/%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D0%B4%D1%80%D1%8A%D0%BD_%D0%BB%D0%BE%D0%B3%D0%BE_eene87.png"
+              width="2245"
+              height="825"
+              alt="singing course"
+              class="course-image"
+            />
             <div class="card-content">
-            <h3>Уроци по пеене за деца и тийнейджъри</h3>
-            <p>Индивидуални и групови занимания, които развиват гласа, музикалния слух и сценичното присъствие. Подходящи за всички, които обичат да пеят – без значение от опита.</p>
+              <h3>Китара</h3>
+              <p>
+                Индивидуални и групови занимания, подходящи както за начинаещи,
+                така и за напреднали. Учим акорди, ритъм, техника и любими песни
+                в творческа и приятелска атмосфера.
+              </p>
             </div>
-            
             <span class="card-link"><a href="#">Научи повече</a></span>
+          </div>
+          <div class="fixed-row">
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753373390/%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D0%BB%D0%B8%D0%BD%D0%B0_%D0%BB%D0%BE%D0%B3%D0%BE_vb9jsy.png"
+                width="1196"
+                height="502"
+                alt="singing course"
+                class="course-image"
+              />
+              <div class="card-content">
+                <h3>Актьорско майсторство</h3>
+                <p>
+                  Занимания, които развиват въображението, увереността и
+                  изразителността чрез театрални игри, сценични етюди и работа в
+                  екип. Подходящи за всички, които обичат да се превъплъщават.
+                </p>
+              </div>
+              <span class="card-link"><a href="#">Научи повече</a></span>
+            </div>
+            <div class="card">
+              <img
+                src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753373631/%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D1%80%D0%B8%D1%81_%D0%BB%D0%BE%D0%B3%D0%BE_fbiasx.png"
+                width="1056"
+                height="432"
+                alt="singing course"
+                class="course-image"
+              />
+              <div class="card-content">
+                <h3>Рисуване</h3>
+                <p>
+                  Индивидуални и групови уроци, които развиват креативността,
+                  фината моторика и усета към цвят и форма. Подходящи както за
+                  начинаещи, така и за по-напреднали малки художници.
+                </p>
+              </div>
+              <span class="card-link"><a href="#">Научи повече</a></span>
+            </div>
+          </div>
+          <div class="card" id="bg">
+            <img
+              src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753382121/%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D0%B1%D0%B5%D0%BB_%D0%BB%D0%BE%D0%B3%D0%BE_s2xd5x.png"
+              width="1072"
+              height="443"
+              alt="singing course"
+              class="course-image"
+            />
+            <div class="card-content">
+              <h3>Български език и литература</h3>
+              <p>
+                Подготовка и подкрепа по БЕЛ в малки групи или индивидуално – за
+                по-добро разбиране, писане и изразяване. Подходящо за ученици от
+                начален, прогимназиален и гимназиален етап.
+              </p>
+            </div>
+            <span class="card-link"><a href="#">Научи повече</a></span>
+          </div>
+          <div class="card" id="math">
+            <img
+              src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753382122/%D0%91%D0%B0%D1%80%D0%B1%D0%B0%D0%BC%D0%B0%D1%82_%D0%BB%D0%BE%D0%B3%D0%BE_kxnp6h.png"
+              width="2245"
+              height="825"
+              alt="singing course"
+              class="course-image"
+            />
+            <div class="card-content">
+              <h3>Математика</h3>
+              <p>
+                Индивидуални и групови занимания, съобразени с учебната програма
+                и нуждите на ученика. Подобряваме логическото мислене,
+                увереността и резултатите по математика.
+              </p>
+            </div>
+            <span class="card-link"><a href="#">Научи повече</a></span>
+          </div>
         </div>
-    </div>
-</section>
-  </main>
-</body>
-
+      </section>
+      <section class="our-team">
+        <div class="main-title">
+          <h2 class="animation-hide-highlight">Нашия Екип</h2>
+          <div class="line-divider small">
+            <svg viewBox="0 0 1359 91" preserveAspectRatio="none">
+              <path
+                d="M1358 28C1358 28 876 14 798 64C720 114 598 87 450 20C275.398 -59.0427 153.325 150.096 1.00006 64"
+                stroke="#7021A3"
+                stroke-width="2.31"
+                fill="none"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card-team">
+            <img
+              src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753793801/fake-face_ovoayy.jpg"
+              width="1072"
+              height="443"
+              alt="singing course"
+              class="member-image"
+            />
+            <div class="card-content">
+              <h3>Блага Петрова</h3>
+              <p>
+                Основател и преподавател по пиано и солфеж
+              </p>
+            </div>
+            <span class="card-link"><a href="#">Научи повече</a></span>
+          </div>
+          <div class="card-team">
+            <img
+              src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753795812/fake-face_2_kgg46g.jpg"
+              width="1072"
+              height="443"
+              alt="singing course"
+              class="member-image"
+            />
+            <div class="card-content">
+              <h3>Денис Тафров</h3>
+              <p>
+                Преподавател по пеене
+              </p>
+            </div>
+            <span class="card-link"><a href="#">Научи повече</a></span>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
