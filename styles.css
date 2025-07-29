@@ -168,24 +168,54 @@ color: white;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     padding: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 380px;
+    height: 235px;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    transition: transform 0.3s ease, height 0.5s ease;
+    text-align: center;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
+  height: 536.56px;
+  
 }
 
 .card:first-of-type {
   /* cursor musical note */
-  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/c_scale,w_32/v1752246579/musical-note_hdcjpr.png') 16 16, auto;
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753363865/music_fb0cyz.png') 16 16, auto;
 }
 
 .card:nth-of-type(2) {
   /* cursor microphone */
   cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/c_scale,w_32/v1752246990/microphone_thilkr.png') 16 16, auto;
+}
+
+.card:nth-of-type(3) {
+  /* cursor guitar */
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753363957/guitar-instrument_1_jonlvc.png') 16 16, auto;
+}
+
+.fixed-row .card:first-of-type {
+  /* cursor theatre */
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/c_scale,w_32/v1753383053/theatre_ig016i.png') 16 16, auto;
+}
+
+.fixed-row .card:nth-of-type(2) {
+  /* cursor drawing */
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753383619/brush_qms1jn.png') 16 16, auto;
+}
+
+#bg {
+  /* cursor bg */
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753383621/open-book_jp3u0l.png') 16 16, auto;
+}
+
+#math {
+  /* cursor math */
+  cursor: url('https://res.cloudinary.com/dk4bzhxfg/image/upload/v1753383646/pi-mathematical-constant-symbol_lgkxwx.png') 16 16, auto;
 }
 
 .card img {
@@ -196,11 +226,11 @@ color: white;
 }
 
 .card h3 {
-    color: #0056d2;
     font-size: 1.25rem;
     line-height: 1.4;  
     min-height: 3em; 
     margin-bottom: 10px;
+    
 }
 
 .card p {
@@ -214,6 +244,7 @@ color: white;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
+    
 }
 
 .card a::before {
@@ -224,6 +255,17 @@ color: white;
 
 .card-link {
     margin-top: auto; /* push to bottom */
+}
+
+
+.fixed-row {
+  /* фиксира да има две карти само на втория ред */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .burger-menu {
@@ -285,6 +327,52 @@ img {
 
 .line-divider {
   margin-top: 20px;
+}
+
+.card-team {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 200px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-team {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 200px;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-team a {
+  color: #B22222;
+}
+.card-team:hover {
+  background-color: #96D5FF;
+}
+
+.member-image {
+  border-radius: 50%;
+  max-width: 200px;
+  margin: 0 auto;
+
+}
+
+.card-team a::before {
+    content: "›";
+    font-size: 1.2em;
+    margin-right: 5px;
+    
 }
 
 
