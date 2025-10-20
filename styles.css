@@ -89,7 +89,7 @@ color: white;
   margin-right: 10px;
 }
 
-.nav-main a:hover {
+.nav-hover a:hover {
   border: 5px solid transparent; /* Make the border transparent */
   border-image: linear-gradient(90deg, rgba(255, 30, 30, 1) 0%, rgba(255, 242, 0, 1) 50%, rgba(0, 212, 255, 1) 100%); /* Apply gradient */
   border-image-slice: 1; /* Makes the gradient applied to the entire border */
@@ -342,18 +342,6 @@ img {
     text-align: center;
 }
 
-.card-team {
-    background-color: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-    margin-bottom: 200px;
-    width: 100%;
-    max-width: 380px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 .card-team a {
   color: #B22222;
 }
@@ -362,9 +350,10 @@ img {
 }
 
 .member-image {
-  border-radius: 50%;
+  border-radius: 16px;
   max-width: 200px;
   margin: 0 auto;
+  
 
 }
 
@@ -375,6 +364,9 @@ img {
     
 }
 
+.card-content {
+  margin-top: 10px;
+}
 
 @media (max-width: 1279px) {
   .header-container {
