@@ -334,7 +334,6 @@ img {
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     padding: 20px;
-    margin-bottom: 200px;
     width: 100%;
     max-width: 380px;
     display: flex;
@@ -393,6 +392,108 @@ img {
 
 }
 
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #0244ae;
+  color: white;
+  padding: 40px 20px 10px;
+  margin-top: 50px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  font-size: 0.95rem;
+  color: #f1f1f1;
+}
+
+.footer-links, .footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #ffdd00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffdd00;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: #ffdd00;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 12px;
+  font-size: 1.2rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffdd00;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
 @media (max-width: 959px) {
   .header-container {
       background-color:#0244ae;
@@ -418,6 +519,19 @@ img {
 }
 
   }
+
+  /* Responsive footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    margin-top: 20px;
+  }
+}
 
 
 
