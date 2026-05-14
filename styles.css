@@ -63,6 +63,10 @@ li {
   cursor: pointer;
 }
 
+img {
+  cursor: pointer;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -365,6 +369,16 @@ img {
 
 .card-content {
   margin-top: 10px;
+}
+
+.text-content {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #3f3f3f;
+}
+
+.text-content p {
+  margin-bottom: 32px;
 }
 
 @media (max-width: 1279px) {
