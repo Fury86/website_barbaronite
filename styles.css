@@ -545,6 +545,10 @@ img {
   .footer-contact {
     margin-top: 20px;
   }
+  p {
+    text-align: center;
+    padding: 48px 16px;
+  }
 }
 
 
