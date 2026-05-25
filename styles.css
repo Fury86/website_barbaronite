@@ -230,7 +230,7 @@ color: white;
 }
 
 .card h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.4;  
     min-height: 3em; 
     margin-bottom: 10px;
@@ -360,11 +360,10 @@ img {
 
 }
 
-.card-team a::before {
+.card-link a::before {
     content: "›";
     font-size: 1.2em;
     margin-right: 5px;
-    
 }
 
 .card-content {
