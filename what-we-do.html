@@ -12,40 +12,45 @@
 <body>
 
   <nav class="main-menu">
+  <div class="header-container">
 
-    <div class="header-container">
+    <div class="nav-logo">
+      <h1>
+        <a href="index.html">БарбарониТЕ</a>
+      </h1>
+    </div>
 
-      <div class="nav-logo">
-        <h1>БарбарониТЕ</h1>
-      </div>
+    <button class="mobile-menu-toggle" aria-label="Отвори меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-      <div class="nav-main">
-        <ul>
-          <li><a href="index.html">Начало</a></li>
-          <li><a href="#">За Нас</a></li>
-          <li><a href="#">Събития</a></li>
-          <li><a href="#">Програма</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-      </div>
+    <div class="nav-main">
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="za-nas.html">За Нас</a></li>
+        <li><a href="what-we-do.html">Дейности</a></li>
+        <li><a href="program.html">Програма</a></li>
+        <li><a href="events.html">Събития</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </div>
 
-      <div class="nav-end">
-
+    <div class="nav-end">
+      <a href="tel:+359887865073" class="phone-link">
         <div class="nav-icon">
           <i class="fa-solid fa-phone-volume fa-lg"></i>
         </div>
 
         <div class="nav-telephone">
-          <span class="contact-number">
-            +359887865073
-          </span>
+          <span class="contact-number">+359887865073</span>
         </div>
-
-      </div>
-
+      </a>
     </div>
 
-  </nav>
+  </div>
+</nav>
 
   <main>
 
@@ -68,7 +73,7 @@
       </a>
 
       <a href="summer-academy.html">
-        <img src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1779973109/2f94f8c272d000c197a771264aff0536a145aa3a_yonlxj.webp" width="1440" height="1080" alt="">
+        <img src="https://res.cloudinary.com/dk4bzhxfg/image/upload/v1779812969/2f94f8c272d000c197a771264aff0536a145aa3a-ezgif.com-png-to-webp-converter_iqrmk2.webp" width="1440" height="1080" alt="">
       </a>
     </div>
 
@@ -352,6 +357,14 @@
   </div>
 </footer>
   </main>
+<script>
+  const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+  const navMain = document.querySelector(".nav-main");
 
+  mobileMenuToggle.addEventListener("click", function () {
+    mobileMenuToggle.classList.toggle("menu-open");
+    navMain.classList.toggle("menu-open");
+  });
+</script>
 </body>
 </html>
