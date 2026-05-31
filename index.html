@@ -16,8 +16,17 @@
     <header>
       <nav class="main-menu">
         <div class="header-container">
-          <div class="nav-logo"><h1>БарбарониТЕ</h1></div>
-          <div class="nav-main nav-hover">
+          <div class="nav-logo">
+  <h1>БарбарониТЕ</h1>
+</div>
+
+<button class="mobile-menu-toggle" aria-label="Отвори меню">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div class="nav-main nav-hover">>
             <ul>
               <li id="nav-about"><a href="za-nas.html">За Нас</a></li>
               <li id="nav-events"><a href="what-we-do.html">Дейности</a></li>
@@ -434,5 +443,15 @@
   </div>
 </footer>
     </main>
+<script>
+const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const navMain = document.querySelector(".nav-main");
+
+mobileMenuToggle.addEventListener("click", () => {
+  mobileMenuToggle.classList.toggle("menu-open");
+  navMain.classList.toggle("menu-open");
+});
+</script>
+  </body>
   </body>
 </html>
