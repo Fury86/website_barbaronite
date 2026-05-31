@@ -1,0 +1,298 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo a,
+.phone-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.phone-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.summer-hero {
+    text-align: center;
+    padding: 50px 20px 60px;
+}
+
+.summer-hero h1 {
+    margin-bottom: 20px;
+}
+
+.summer-hero h2 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.summer-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PHOTO GRID
+========================================= */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.summer-content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.summer-content h2 {
+    margin-bottom: 50px;
+}
+
+.summer-content h3 {
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+
+.summer-content p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.summer-content strong {
+    font-weight: 700;
+}
+
+
+/* =========================================
+   IMPORTANT SECTION
+========================================= */
+
+.important-title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.important-text {
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.35;
+}
+
+
+/* =========================================
+   BLUE CTA SECTION
+========================================= */
+
+.summer-cta {
+    background-color: #0048b8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.summer-cta h2 {
+    margin: 0;
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobile-menu-toggle {
+    display: none;
+    width: 34px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+
+.mobile-menu-toggle span {
+    position: absolute;
+    left: 0;
+    width: 34px;
+    height: 4px;
+    background-color: white;
+    border-radius: 999px;
+    transition: 0.3s ease;
+}
+
+.mobile-menu-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.mobile-menu-toggle span:nth-child(2) {
+    top: 12px;
+}
+
+.mobile-menu-toggle span:nth-child(3) {
+    top: 24px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .header-container {
+        position: relative;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10002;
+    }
+
+    .nav-main {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 10001;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .nav-main.menu-open {
+        display: block;
+    }
+
+    .nav-main ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-main li {
+        display: block;
+        padding: 18px 24px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-main a {
+        color: #222;
+        font-size: 1.2rem;
+    }
+
+    .mobile-menu-toggle.menu-open span:nth-child(1) {
+        top: 12px;
+        transform: rotate(45deg);
+    }
+
+    .mobile-menu-toggle.menu-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.menu-open span:nth-child(3) {
+        top: 12px;
+        transform: rotate(-45deg);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .section-container {
+        padding: 0 16px;
+    }
+
+    .summer-hero {
+        padding: 40px 18px;
+    }
+
+    .summer-hero p {
+        font-size: 1rem;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid img {
+        height: 260px;
+    }
+
+    .summer-content {
+        padding: 60px 16px;
+    }
+
+    .summer-content h3 {
+        margin-top: 50px;
+    }
+
+    .summer-content p {
+        font-size: 1rem;
+    }
+
+    .summer-cta {
+        padding: 45px 16px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .nav-telephone {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    .photo-grid img {
+        height: 220px;
+    }
+}
